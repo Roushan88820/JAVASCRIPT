@@ -1,0 +1,40 @@
+                                                                   code
+
+let n = process.argv;
+let num = parseInt(n[2]);
+
+let is_prime = true;
+let div = 2;
+while(div*div<=num) {
+ let rem = num % div;
+
+if(rem==0) {
+    is_prime = false;
+    break;
+}
+
+    div++;
+}
+
+if(is_prime == true) {
+console.log("number is prime")
+} else {
+    console.log("number is not prime");
+}
+
+
+                                                            OUTPUT(code)
+                                                            
+ PS C:\Users\91888\Desktop\javascript> node isprime.js 45
+number is not prime
+
+PS C:\Users\91888\Desktop\javascript> node isprime.js 21
+number is not prime
+
+PS C:\Users\91888\Desktop\javascript> node isprime.js 59
+number is prime
+
+
+
+
+                                                           
