@@ -1,0 +1,112 @@
+                                                                      OUTPUT Code
+console.log("hello world");
+console.log("my name is roushan");
+console.log(6+8);
+
+                   Result
+hello world
+my name is roushan
+14                   
+*********************************************************************************************************************************************************************************
+                                                                     
+                                                                     VARIABLES Code
+ 
+   let i = 56;
+   console.log(i);
+   i = "Hamaare guru kaa naam akash kumar jha hai";
+   console.log(i);
+   i = 90;
+  console.log(i);
+  i = true;
+  console.log(i);
+  
+                       Result
+
+56
+Hamaare guru kaa naam akash kumar jha hai
+90
+true                       
+*****************************************************************************************************************************************************************************                                                                                                                                                                                                                                                                                                                                                            
+                                                                    
+                                                                    INPUT Code
+let i = process.argv;
+
+
+ //console.log("at  0" + i[0]);
+ //console.log("at  1 " + i[1]);
+
+ // aslii maal second index see milnaa start hota hai
+ 
+ 
+console.log("at  1  " + i[2]);
+console.log("at  2  " + i[3]);
+console.log("at  3  " + i[4]); 
+console.log("at  4  " + i[5]); 
+                              
+                                Result
+PS C:\Users\91888\Desktop\javascript> node input.js 10 roushan mummy papa
+
+at  0C:\Program Files\nodejs\node.exe
+at  2 10
+at  3 roushan
+at  4 mummy
+at  5 papa
+
+PS C:\Users\91888\Desktop\javascript> node input.js 10 "Roushan Rishabh Mummy Papa"
+
+at  0C:\Program Files\nodejs\node.exe
+at  1 C:\Users\91888\Desktop\javascript\input.js
+at  2  Mummy Papa Roushan Rishabh
+at  4 undefined
+at  5 undefined
+
+PS C:\Users\91888\Desktop\javascript> node input.js " hello javascript"  hello javascript Roushan
+
+at  1   hello javascript
+at  2  hello
+at  3  javascript
+at  4  Roushan  
+
+
+                                                       ##CODE##
+                                                       
+// Every thing comes as a String in input in command line arguments
+
+let cmd_line_args = process.argv;                // input lene kee liyee use kartee hai "process.argv";
+let i = cmd_line_args[2];
+console.log("i is " + i);
+console.log("typeof i is  " + typeof i);
+ i = i + 30;
+ console.log(i);
+
+ 
+let j = parseInt(cmd_line_args[2],10);          // its changes the sting into a number of base 10 that is decimal
+console.log("j is " + j);
+console.log("typeof j is  " + typeof j);
+ j = j + 30;
+ console.log(j);
+ 
+                       Result
+PS C:\Users\91888\Desktop\javascript> node input.js 12
+i is 12
+typeof i is  string
+1230
+j is 12
+typeof j is  number
+42                       
+                                                       
+
+
+                                                                      
+                                                                      
+                                                                      
+                                                                      
+                                                                      
+                                                                      
+                                                                      LOOPS
+                                                                      
+                                                                      
+                                                                      
+                                                                      CONDITIONALS
+                                                                      
+                                                                      
