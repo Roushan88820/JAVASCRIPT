@@ -10,6 +10,8 @@ let arr = [];
 for(let i = 0; i<n; i++) {
  let value = parseInt(clargs[i+3]);
   arr.push(value);
+       or
+  // arr[i] = value;     
 }
 
 for(let i = 0;i<arr.length;i++) {
@@ -17,3 +19,14 @@ for(let i = 0;i<arr.length;i++) {
 }
 console.log(arr);
 
+
+                                                                  RESULT
+                                                                  
+
+PS C:\Users\91888\Desktop\javascript\lecture 22> node firstArray.js 5 10 20 30 40 50 
+10
+20
+30
+40
+50
+[ 10, 20, 30, 40, 50 ]                                                                  
