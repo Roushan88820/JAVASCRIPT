@@ -1,4 +1,6 @@
-// npm install minimist :- this is to install a library from npm
+                                                                      CODE 
+                                                                      
+// npm install minimist :- this is to install a library from npm , "minimist is the name of library present in package"
 
 let parser = require('minimist');
 let args = parser(process.argv);
@@ -11,3 +13,85 @@ console.log(args);
 // node first_module.js --name "roushan kumar" --age 21
 // node first_module.js --name="roushan kumar" --age=21
 */
+
+                                                                   RESULTS
+                                                                   
+Windows PowerShell
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+
+PS C:\Users\91888\Desktop\javascript\lecture 22> node first_module.js -x 10 -y 20
+{
+  _: [
+    'C:\\Program Files\\nodejs\\node.exe',
+    'C:\\Users\\91888\\Desktop\\javascript\\lecture 22\\first_module.js'
+  x: 10,
+  y: 20
+}
+PS C:\Users\91888\Desktop\javascript\lecture 22> node first_module.js "x = 20" " y=30"
+[
+  'C:\\Program Files\\nodejs\\node.exe',
+  'C:\\Users\\91888\\Desktop\\javascript\\lecture 22\\first_module.js',
+  'x = 20',
+]
+PS C:\Users\91888\Desktop\javascript\lecture 22> node first_module.js --x 20 --y 30
+[
+  'C:\\Program Files\\nodejs\\node.exe',
+  'C:\\Users\\91888\\Desktop\\javascript\\lecture 22\\first_module.js',
+  '--x',
+  '20',
+  '--y',
+  '30'
+]
+PS C:\Users\91888\Desktop\javascript\lecture 22>  node first_module.js --x 20 --y 30
+{
+  _: [
+    'C:\\Program Files\\nodejs\\node.exe',
+    'C:\\Users\\91888\\Desktop\\javascript\\lecture 22\\first_module.js'
+  ],
+}
+PS C:\Users\91888\Desktop\javascript\lecture 22> node first_module.js --name = "roushan kumar" --age = 
+21
+{
+  _: [
+    'C:\\Program Files\\nodejs\\node.exe',
+    'C:\\Users\\91888\\Desktop\\javascript\\lecture 22\\first_module.js',
+    'roushan kumar',
+    21
+  name: '=',
+  age: '='
+}
+PS C:\Users\91888\Desktop\javascript\lecture 22> node first_module.js --name = "roushan kumar" --age = 
+
+{
+  _: [
+    'C:\\Program Files\\nodejs\\node.exe',
+    'C:\\Users\\91888\\Desktop\\javascript\\lecture 22\\first_module.js',
+PS C:\Users\91888\Desktop\javascript\lecture 22> node first_module.js --name="roushan kumar" --age=34
+{
+  _: [
+    'C:\\Program Files\\nodejs\\node.exe',
+    'C:\\Users\\91888\\Desktop\\javascript\\lecture 22\\first_module.js'
+  ],
+  name: 'roushan kumar',
+  age: 34
+}
+PS C:\Users\91888\Desktop\javascript\lecture 22> node first_module.js --name="roushan kumar" --age 21
+{
+  _: [
+    'C:\\Program Files\\nodejs\\node.exe',
+    'C:\\Users\\91888\\Desktop\\javascript\\lecture 22\\first_module.js'
+  ],
+  name: 'roushan kumar',
+  age: 21
+}
+PS C:\Users\91888\Desktop\javascript\lecture 22> node first_module.js --name "roushan kumar" --age 21  
+{
+  _: [
+    'C:\\Program Files\\nodejs\\node.exe',
+    'C:\\Users\\91888\\Desktop\\javascript\\lecture 22\\first_module.js'
+  ],
+  name: 'roushan kumar',
+  age: 21
+}
+PS C:\Users\91888\Desktop\javascript\lecture 22>                                                                   
