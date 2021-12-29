@@ -95,3 +95,36 @@ PS C:\Users\91888\Desktop\javascript\lecture 22> node first_module.js --name "ro
   age: 21
 }
 PS C:\Users\91888\Desktop\javascript\lecture 22>                                                                   
+
+  *****************************************************************************************************************************************************************************
+  
+  //                   (NEW EXAMPLE) 
+
+ let minimist = require('minimist');
+ let args = minimist(process.argv);
+
+ let name = args.name;
+ let age =  args.age;
+
+ if(age>30) {
+
+ console.log("hello " + name + " mummy bulaa rhii hai" );
+
+ } else {
+         
+console.log("heyy " + name + " where is the party tonight?");
+
+ }
+                                      RESULT
+
+ PS C:\Users\91888\Desktop\javascript\lecture 22> node first_module.js --name="roushan" --age=21  
+
+heyy roushan where is the party tonight?
+  
+PS C:\Users\91888\Desktop\javascript\lecture 22> node first_module.js --name="roushan" --age=50        
+
+hello roushan mummy bulaa rhii hai
+
+
+
+  
