@@ -31,6 +31,25 @@ let dest = words.join(" ");
 
 fs.writeFileSync(args.dest,dest,"utf-8");
 
+ //  MODIFIED METHOD               
+
+// node first_File_manipulation.js --source=file1.txt  --dest=file2.txt
+
+let minimist = require("minimist");
+let args = minimist(process.argv);
+let fs = require("fs");   
+
+
+let stext = fs.readFileSync(args.source,'utf-8');
+// console.log(stext);
+
+let dest = stext.toUpperCase(" ")
+
+fs.writeFileSync(args.dest,dest,"utf-8");
+
+
+
+
                                                  RESULT
                                                  
 
