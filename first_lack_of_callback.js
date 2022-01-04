@@ -1,8 +1,10 @@
-// first_lack_of_callback.js --source=big_file.txt
+// first_lack_of_callback.js --source=big_file.txt (  COMMAND LINE ARGUMENT)
 
 // task 1:- file reading (hardisk);  
 
 // task 2:- print prime numbers till the given number "n";
+
+********************************************************************************************************************************************************************************
 
 let minimist = require("minimist");
 let args = minimist(process.argv);
@@ -72,7 +74,9 @@ task 1 finished at 7519863
 181
 task 2 started at 7519864
 task 2 finished at 7520136
-272                                            
+272      
+454
+
 
 
 
