@@ -64,6 +64,16 @@ for(let i = 2; i<=50000; i++) {
 console.log( time_4 - time_3);
 console.log( time_4 - time_1);
 
+                                            RESULT
+                                            
+PS C:\Users\91888\Desktop\javascript\lecture 23> node first_lack_of_callback.js --source=big_file.txt
+task 1 started at 519682
+task 1 finished at 7519863
+181
+task 2 started at 7519864
+task 2 finished at 7520136
+272                                            
+
 
 
 
