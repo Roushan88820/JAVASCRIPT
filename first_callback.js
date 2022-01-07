@@ -63,7 +63,32 @@ let time_4 = Date.now();
 console.log("task_2 finished at " + time_4 % 100000000) ;
 console.log("task 2 take " + time_4 - time_3 + " time");
 
+ *******************************************************************************************************************************************************************************
+ 
+                                                                                RESULTS
 
+# result without using callback
 
+PS C:\Users\91888\Desktop\javascript\lecture 23> node first_lack_of_callback.js --source=big_file.txt     
+task 1 started at 639626
+task 1 finished at 8639820
+task 2 started at 8639821
+task 2 finished at 8640060
+239
+434
 
+# result with using callback
+
+PS C:\Users\91888\Desktop\javascript\lecture 23> node first_callback.js --source=big_file.txt --n=70000;  
+task 1 started at 19603
+task_2 started at 48819609
+task_2 finished at 48820043
+NaN time
+task 1 finished at 20215
+PS C:\Users\91888\Desktop\javascript\lecture 23> node first_callback.js --source=big_file.txt --n=70000;  
+task 1 started at 32957
+task_2 started at 48832972
+task_2 finished at 48833401
+NaN time
+task 1 finished at 33571
 
