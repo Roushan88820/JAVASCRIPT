@@ -68,7 +68,17 @@ console.log( time_4 - time_1);
 
 
 
+                                                             RESULTS
+                                                             
+                                                             
 
-
+PS C:\Users\91888\Desktop\javascript\lecture 23> node first_lack_of_callback.js --source=big_file.txt   
+task 1 started at 639626
+task 1 finished at 8639820
+194
+task 2 started at 8639821
+task 2 finished at 8640060
+239
+434
 
 
