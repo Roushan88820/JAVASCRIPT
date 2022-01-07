@@ -1,10 +1,10 @@
-// first_lack_of_callback.js --source=big_file.txt (  COMMAND LINE ARGUMENT)
+// first_lack_of_callback.js --source=big_file.txt
 
-// task 1:- file reading (hardisk);  
+// task 1:- file reading ; (hardisk kaa kaam) ;
 
-// task 2:- print prime numbers till the given number "n";
+// task 2:- print prime numbers till the given number "n"; (cpu kaa  kaam) ;
 
-********************************************************************************************************************************************************************************
+// task 2 will be done only when task 1 will be completed(which is not good);
 
 let minimist = require("minimist");
 let args = minimist(process.argv);
@@ -48,14 +48,14 @@ console.log( time_2 - time_1);
 //                  TASK_2 ARENA
 
  let time_3 = Date.now();
- let manan = [];
+ let array = [];
 
 for(let i = 2; i<=50000; i++) {
 
     let is_prime = Is_prime(i);
     if(is_prime==true) {
        
-        manan.push(i);
+        array.push(i);
 
     }
 }
@@ -65,18 +65,6 @@ for(let i = 2; i<=50000; i++) {
  
 console.log( time_4 - time_3);
 console.log( time_4 - time_1);
-
-                                            RESULT
-                                            
-PS C:\Users\91888\Desktop\javascript\lecture 23> node first_lack_of_callback.js --source=big_file.txt
-task 1 started at 519682
-task 1 finished at 7519863
-181
-task 2 started at 7519864
-task 2 finished at 7520136
-272      
-454
-
 
 
 
