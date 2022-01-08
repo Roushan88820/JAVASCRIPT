@@ -18,7 +18,7 @@ downloadka_Promise.then(function (response){
 
     let html = response.data;
     fs.writeFileSync(args.dest, html, "utf-8");
-    console.log(html)
+ //   console.log(html)
 
 }).catch(function (error){
 
